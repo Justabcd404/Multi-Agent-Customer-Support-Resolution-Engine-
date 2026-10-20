@@ -1,0 +1,27 @@
+# Python bytecode cache
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+
+# Node modules & build artifacts
+node_modules/
+dist/
+build/
+.next/
+
+# Environment files
+.env
+.env.local
+
+# Database files
+*.sqlite
+*.db
+
+# Logs
+logs/
+*.log
+Study for interview/
+interview_guide.md

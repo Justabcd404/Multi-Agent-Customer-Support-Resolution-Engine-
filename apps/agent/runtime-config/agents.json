@@ -1,0 +1,44 @@
+{
+  "specialists": [
+    {
+      "name": "technical",
+      "description": "Handles login errors, checkout failures, app crashes, technical bugs",
+      "keywords": ["login", "crash", "error", "app", "checkout", "bug", "token", "auth"],
+      "team": "Engineering On-call",
+      "tools": ["lookupErrorCode"],
+      "kb_files": ["troubleshooting.md"]
+    },
+    {
+      "name": "billing",
+      "description": "Handles charges, duplicate billing, refunds, invoices, subscription charges",
+      "keywords": ["charge", "double", "billed", "refund", "invoice", "payment", "subscription", "bank"],
+      "team": "Billing Lead",
+      "tools": ["dbQuery", "subscriptionLookup"],
+      "kb_files": ["billing_policy.md"]
+    },
+    {
+      "name": "policy",
+      "description": "Handles returns, terms of service, legal compliance, warranty",
+      "keywords": ["policy", "return", "cancel", "warranty", "terms", "legal", "guarantee"],
+      "team": "Policy & Compliance",
+      "tools": ["dbQuery"],
+      "kb_files": ["billing_policy.md"]
+    },
+    {
+      "name": "orders",
+      "description": "Handles order tracking, shipping status, package delivery, cancellations",
+      "keywords": ["order", "track", "package", "shipping", "delivery", "fedex", "ups", "where is"],
+      "team": "Order Operations",
+      "tools": ["orderLookup"],
+      "kb_files": ["shipping_delivery.md"]
+    },
+    {
+      "name": "products",
+      "description": "Handles product specs, stock availability, pricing, variants",
+      "keywords": ["stock", "product", "price", "availability", "keyboard", "headphones", "spec"],
+      "team": "Merchandising",
+      "tools": ["productLookup"],
+      "kb_files": ["shipping_delivery.md"]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "multi-agent-support-engine",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Multi-Agent Customer Support Resolution Engine - React, Express, MongoDB, Python LangGraph",
+  "scripts": {
+    "dev:web": "npm run dev --workspace apps/web",
+    "dev:api": "npm run dev --workspace apps/api",
+    "dev:agent": "cd apps/agent && python -m uvicorn app.server:app --reload --port 5000",
+    "dev:all": "concurrently \"npm run dev:api\" \"npm run dev:web\" \"npm run dev:agent\"",
+    "install:all": "npm install && cd apps/api && npm install && cd ../web && npm install"
+  },
+  "workspaces": [
+    "apps/web",
+    "apps/api"
+  ],
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

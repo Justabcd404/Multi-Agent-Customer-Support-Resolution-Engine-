@@ -1,0 +1,25 @@
+{
+  "guard": {
+    "signals": [
+      { "phrase": "talk to a manager", "enabled": true },
+      { "phrase": "chargeback", "enabled": true },
+      { "phrase": "sue", "enabled": true },
+      { "phrase": "lawyer", "enabled": true },
+      { "phrase": "data breach", "enabled": true }
+    ]
+  },
+  "escalation": {
+    "rules": {
+      "hard_guard": true,
+      "high_severity": true,
+      "unresolved": true,
+      "conflicts": true,
+      "specialist_handoff": true,
+      "frustration_repeat": true
+    }
+  },
+  "intents": {
+    "confidence_threshold": 0.5,
+    "multi_issue_threshold": 0.4
+  }
+}

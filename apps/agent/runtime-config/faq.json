@@ -1,0 +1,18 @@
+[
+  {
+    "id": "faq-01",
+    "label": "Store Hours & Support",
+    "match": "contains",
+    "triggers": ["store hours", "support hours", "when are you open"],
+    "answer": "Our customer support team is available 24/7 online. Phone support is available Monday to Friday, 9 AM - 6 PM EST.",
+    "enabled": true
+  },
+  {
+    "id": "faq-02",
+    "label": "Return Window",
+    "match": "contains",
+    "triggers": ["return window", "how many days to return"],
+    "answer": "You can return most items within 30 days of delivery for a full refund.",
+    "enabled": true
+  }
+]
